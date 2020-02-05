@@ -1,3 +1,7 @@
+* {
+  background-color: #660006;
+  color: white;
+}
 body {
   text-align: center;
   font-family: "Roboto", monospace;
@@ -41,14 +45,15 @@ h2 {
   line-height: 150px;
   user-select: none;
   width: 150px;
+  border-color: white;
 }
 .square:hover {
-  background-color: lightgray;
+  background-color: #4B6B12;
   cursor: pointer;
 }
 
 #reset-button {
-  background-color: white;
+  background-color: #257C7C;
   border: 1px solid black;
   color: black;
   font-size: 21px;
@@ -59,7 +64,7 @@ h2 {
 }
 
 #reset-button:hover {
-  background-color: black;
+  background-color: #9B2E2E;
   color: white;
   cursor: pointer;
 }
