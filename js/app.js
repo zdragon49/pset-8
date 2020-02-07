@@ -13,6 +13,9 @@ const winningConditions = [
 let board;
 let turn;
 let win;
+let xScore = 0
+let oScore = 0
+let tieScore = 0
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
@@ -36,6 +39,19 @@ function render() {
   board.forEach(function(mark, index) {
     squares[index].textContent = mark;
   });
+
+  if (win === "X") {
+      xScore = xScore + 1
+    }
+    else if (win === "O") {
+      oScore = oScore + 1
+    }
+    else if (win === "T") {
+      tieScore = tieScore + 1
+    }
+    xWins.innerHTML = xScore
+    oWins.innerHTML = oScore
+    tieWins.innerHTML = tieScore
 
   message.textContent =
     win === "T" ? "It's a tie!" : win ? `${win} wins!` : `Turn: ${turn}`;
