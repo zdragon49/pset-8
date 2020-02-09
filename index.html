@@ -14,39 +14,43 @@
   </head>
   <body>
     <h1> tic | tac | toe
+      
+      <br> </br>
+      <button id="player-turn">Choose Turn</button>
+      <br> </br>
 
-      <table id = "table">
-        <tr>
-          <th class = "wins">X Wins</th>
-          <th class = "wins">O Wins</th>
-          <th class = "wins">Ties</th>
-          <th class = "wins"><button type="button">Reset Scores</button></th>
-        </tr>
-        <tr>
-          <td id="xWins">0</td>
-          <td id="oWins">0</td>
-          <td id = "tieWins">0</td>
-          <td id = "reset"></td>
-        </tr>
-      </table>
+        <table id = "table">
+          <tr>
+            <th class = "wins">X Wins</th>
+            <th class = "wins">O Wins</th>
+            <th class = "wins">Ties</th>
+            <th class = "wins"><button id="reset-score">Reset Scores</button></th>
+          </tr>
+          <tr>
+            <td id="xWins">0</td>
+            <td id="oWins">0</td>
+            <td id = "tieWins">0</td>
+            <td id = "reset"></td>
+          </tr>
+        </table>
 
-    <div class="container column">
-      <h2>Turn: X</h2>
+      <div class="container column">
+        <h2>Turn: X</h2>
 
-      <div class="container wrap" id="board">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-      </div>
+        <div class="container wrap" id="board">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
 
-    <div id="reset-button">Play Again!</div>
-  </div>
+      <div id="reset-button">Play Again!</div>
+    </div>
 
   </body>
 </html>
