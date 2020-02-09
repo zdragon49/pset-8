@@ -16,6 +16,7 @@ let win;
 let xScore = 0
 let oScore = 0
 let tieScore = 0
+let playerTurn = 0
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
@@ -23,6 +24,8 @@ const message = document.querySelector("h2");
 window.onload = init;
 document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = init;
+document.getElementById("reset-score").onclick = scoreReset;
+document.getElementById("player-turn").onclick = whoseTurn;
 ///////////////////// FUNCTIONS /////////////////////////////////////
 function init() {
   board = [
@@ -85,4 +88,23 @@ function getWinner() {
   });
 
   return winner ? winner : board.includes("") ? null : "T";
+}
+
+function scoreReset(){
+  xScore = 0
+  oScore = 0
+  tieScore = 0
+  render();
+}
+
+function whoseTurn() {
+  playerTurn++;
+
+  if (playersTurn = 0) {
+    turn = "X"
+  } else if (playersTurn = 1) {
+    turn = "O"
+  }
+
+
 }
