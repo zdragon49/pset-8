@@ -123,10 +123,11 @@ h2 {
 #player-turn:hover {
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid white;
+  border: 3px dotted white;
   color: white;
   font-size: 20px;
   text-align: center;
   width: 100px;
   height: 100px;
+  background-color: #9B2E2E;
 }
