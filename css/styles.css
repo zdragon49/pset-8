@@ -87,24 +87,35 @@ h2 {
   background-color:#257C7C;
 }
 #reset-score {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border: 3px solid white;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    width: 200px;
-    font-family:"Major Mono Display", monospace;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 3px solid white;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  font-family:"Major Mono Display", monospace;
+}
+#reset-score:hover {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 3px dotted white;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  font-family:"Major Mono Display", monospace;
+  background-color: #4B6B12;
 }
 #player-turn {
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 30px;
-   border: 3px solid black;
+   border: 3px solid white;
    color: white;
-   font-size: 24px;
+   font-size: 20px;
    text-align: center;
-   width: 75px;
-   height: 75px;
+   width: 100px;
+   height: 100px;
 }
