@@ -16,7 +16,7 @@ let win;
 let xScore = 0
 let oScore = 0
 let tieScore = 0
-let playerTurn = 0
+let playerTurn = "X"
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
@@ -101,13 +101,15 @@ function scoreReset(){
 }
 
 function whoseTurn() {
-  playerTurn++;
-
-  if (playersTurn = 0) {
-    turn = "X"
-  } else if (playersTurn = 1) {
-    turn = "O"
-  }
-
-
+    init();
+    if (playerTurn === "X") {
+        turn = "O";
+        playerTurn = "O";
+    }
+    else {
+        turn = "X";
+        playerTurn = "X"
+    }
+    document.getElementById("reset-score").innerHTML = playerTurn;
+    render();
 }
