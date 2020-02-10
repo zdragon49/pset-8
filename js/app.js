@@ -43,6 +43,19 @@ function render() {
     squares[index].textContent = mark;
   });
 
+  if (win === "X") {
+      xScore = xScore + 1
+    }
+    else if (win === "O") {
+      oScore = oScore + 1
+    }
+    else if (win === "T") {
+      tieScore = tieScore + 1
+    }
+    xWins.innerHTML = xScore
+    oWins.innerHTML = oScore
+    tieWins.innerHTML = tieScore
+
   message.textContent =
     win === "T" ? "It's a tie!" : win ? `${win} wins!` : `Turn: ${turn}`;
 }
@@ -85,6 +98,7 @@ function scoreReset(){
   xWins.innerHTML = xScore
   oWins.innerHTML = oScore
   tieWins.innerHTML = tieScore
+  render();
 }
 
 function whoseTurn() {
@@ -97,6 +111,6 @@ function whoseTurn() {
         turn = "X";
         playerTurn = "X"
     }
-    document.getElementById("reset-score").innerHTML = playerTurn;
+    document.getElementById("player-turn").innerHTML = playerTurn;
     render();
 }
