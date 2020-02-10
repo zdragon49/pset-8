@@ -94,7 +94,10 @@ function scoreReset(){
   xScore = 0
   oScore = 0
   tieScore = 0
-  render();
+
+  xWins.innerHTML = xScore
+  oWins.innerHTML = oScore
+  tieWins.innerHTML = tieScore
 }
 
 function whoseTurn() {
