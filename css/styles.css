@@ -2,7 +2,7 @@
   background-color: #660006;
   color: white;
 }
-body { 
+body {
   text-align: center;
   font-family: "Roboto", monospace;
 }
@@ -67,4 +67,24 @@ h2 {
   background-color: #9B2E2E;
   color: white;
   cursor: pointer;
+}
+
+#table {
+  border: 2px solid gray;
+  background-size: cover;
+  height: 30px;
+  width: 25%
+  margin: 10px;
+}
+#reset-score {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-size: cover;
+    border: 3px solid black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
 }
