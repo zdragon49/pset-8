@@ -77,6 +77,15 @@ h2 {
   margin-left:auto;
   margin-right:auto;
 }
+#table:hover {
+  border: 6px solid white;
+  height: 30px;
+  width: 60%;
+  font-size: 24px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#257C7C;
+}
 #reset-score {
     margin-left: auto;
     margin-right: auto;
